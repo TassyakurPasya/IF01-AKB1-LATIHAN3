@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama panggilan Kamu"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/black3"
+        android:layout_marginTop="70dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/cnthnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:ems="20"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/gray"
+        android:textColorHint="@color/gray"
+        android:hint="Contoh  Budi"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur Kamu"
+        android:layout_below="@+id/cnthnama"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/black3"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/cnthumur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umur"
+        android:ems="20"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/gray"
+        android:textColorHint="@color/gray"
+        android:hint="Contoh : 12"/>
+    <Button
+        android:id="@+id/bttn2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bttnkuning"
+        android:layout_below="@id/cnthumur"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:text="Selanjutnya"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textStyle="bold"
+        android:textColor="@color/black3"
+        android:onClick="Sayhai"
+        />
+
+</RelativeLayout>
